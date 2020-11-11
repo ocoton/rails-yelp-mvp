@@ -1,0 +1,11 @@
+<h1>All restaurants</h1>
+<br>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <!-- yellow problem with my link to details page yellow -->
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <% end %>
+</ul>
+
+   <%= link_to "create new restaurant", new_restaurant_path %>
+
